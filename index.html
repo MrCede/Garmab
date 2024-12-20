@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Garmab</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,15 +29,15 @@
 </style>
 <body>
     <header class="bg-[#208aad] flex lg:h-[100px] lg:items-center lg:justify-between">
-        <a href="#">
+        <a href="index.html">
             <img class="lg:w-[270px] lg:pl-16" src="./images/GARMAB 2.jpg" alt="logo">
         </a>
         <ul class="flex items-center gap-2 text-white lg:gap-16 lg:text-[1.4rem] lg:pr-32">
-            <li class="">Services</li>
-            <li class="">Gallery</li>
-            <li class="">FAQS</li>
-            <li class="">Contact</li>
-            <li class="">About us</li>
+            <a href="services.html"><li class="hover:font-bold transition-all">Services</li></a>
+            <a href=""><li class="hover:font-bold transition-all">Gallery</li></a>            
+            <a href=""><li class="hover:font-bold transition-all">FAQS</li></a>         
+            <a href=""><li class="hover:font-bold transition-all">Contact</li></a>            
+            <a href=""><li class="hover:font-bold transition-all">About us</li></a>
         </ul>
     </header>
 
@@ -45,12 +45,12 @@
         <video autoplay loop class="relative lg:hidden">
             <source src="./images/Home garmab vertical.mp4 " type="video/mp4">
         </video>
-        <video autoplay loop class="relative hidden lg:block">
-            <source src="./images/Garmab home Horizontal.mp4 " type="video/mp4">
+        <video autoplay loop class="relative hidden lg:block w-full">
+            <source src="./images/Garmab home Horizontal.mp4" type="video/mp4">
         </video>
-        <div class="text-container text-white absolute top-[50%] left-[3%]">
-            <h1 class="text-center text-[2.2rem]">GARMAB CLEANING SERVICES</h1>
-            <h2 class="phrase text-center">CLEANING WITH PASSION, SERVING WITH PRIDE</h2>
+        <div class="text-container text-white absolute top-[50%] left-[3%] lg:top-[50%] lg:left-[25%]">
+            <h1 class="text-center text-[2.2rem] lg:text-[4rem]">GARMAB CLEANING SERVICES</h1>
+            <h2 class="phrase text-center lg:text-[1.5rem]">CLEANING WITH PASSION, SERVING WITH PRIDE</h2>
         </div>
     </section>
 
@@ -62,34 +62,36 @@
         <button class="boton w-[250px] h-[100px] bg-[#141959] text-white rounded-3xl pointer">Book your appointment today!</button>
     </section>
 
-    <section>
-        <h1 class="text-center text-[2rem]">Benefits for clients</h1>
-        <div class="benefits-container w-full pt-12 flex flex-col justify-center items-center">
-            <img class="icon" src="./images/otorgar.png" alt="icon-1">
-            <h2 class="pt-10 font-bold text-[1.4rem]">HIGH-QUALITY</h2>
-            <p class="pt-2 text-center">GarMab offers high-quality cleaning services, ensuring that spaces are clean and organized</p>
-        </div>
-        <div class="benefits-container w-full pt-12 flex flex-col justify-center items-center mt-2">
-            <img class="icon" src="./images/confianza.png" alt="icon-1">
-            <h2 class="pt-10 font-bold text-[1.4rem]">SECURITY AND TRUST</h2>
-            <p class="pt-2 text-center">GarMab has a team of trained and reliable professionals, guaranteeing the security and trust of clients</p>
-        </div>
-        <div class="benefits-container w-full pt-12 flex flex-col justify-center items-center mt-2">
-            <img class="icon" src="./images/time-and-calendar.png" alt="icon-1">
-            <h2 class="pt-10 font-bold text-[1.4rem]">FLEXIBILITY</h2>
-            <p class="pt-2 text-center">GarMab offers flexible schedules to accommodate the needs of clients</p>
+    <section class="lg:mt-16">
+        <h1 class="text-center text-[2rem] lg:text-[3.5rem]">Benefits for clients</h1>
+        <div class="lg:flex lg:px-16 lg:gap-12">
+            <div class="benefits-container w-full pt-12 flex flex-col justify-center items-center">
+                <img class="icon" src="./images/otorgar.png" alt="icon-1">
+                <h2 class="pt-10 font-bold text-[1.4rem] lg:text-[1.7rem]">HIGH-QUALITY</h2>
+                <p class="pt-2 text-center lg:text-[1.2rem]">GarMab offers high-quality cleaning services, ensuring that spaces are clean and organized</p>
+            </div>
+            <div class="benefits-container w-full pt-12 flex flex-col justify-center items-center mt-2">
+                <img class="icon" src="./images/confianza.png" alt="icon-1">
+                <h2 class="pt-10 font-bold text-[1.4rem] lg:text-[1.7rem]">SECURITY AND TRUST</h2>
+                <p class="pt-2 text-center lg:text-[1.2rem]">GarMab has a team of trained and reliable professionals, guaranteeing the security and trust of clients</p>
+            </div>
+            <div class="benefits-container w-full pt-12 flex flex-col justify-center items-center mt-2">
+                <img class="icon" src="./images/time-and-calendar.png" alt="icon-1">
+                <h2 class="pt-10 font-bold text-[1.4rem] lg:text-[1.7rem]">FLEXIBILITY</h2>
+                <p class="pt-2 text-center lg:text-[1.2rem]">GarMab offers flexible schedules to accommodate the needs of clients</p>
+            </div>
         </div>
     </section>
 
     <footer class="bg-[#208aad] mt-16">
-        <div class="w-full flex items-center gap-8">
+        <div class="w-full flex items-center gap-8 lg:justify-center lg:pr-48">
             <div class="ml-6">
                 <img src="./images/GARMAB 2.jpg" alt="logo" width="200px" height="180px">
             </div>
             <div class=" w-[40px] h-[40px] flex gap-4">
-                <img src="./images/whatsapp.png" alt="whatsapp">
-                <img src="./images/instagram.png" alt="instagram">
-                <img src="./images/facebook.png" alt="facebook">
+                <img class="hover:-translate-y-3 transition-transform duration-[500ms] cursor-pointer" src="./images/whatsapp.png" alt="whatsapp">
+                <img class="hover:-translate-y-3 transition-transform duration-[500ms] cursor-pointer" src="./images/instagram.png" alt="instagram">
+                <img class="hover:-translate-y-3 transition-transform duration-[500ms] cursor-pointer" src="./images/facebook.png" alt="facebook">
             </div>
         </div>
         <p class="text-center text-white">&copy2024 All rights reserved. by DCM Deveploment</p>
