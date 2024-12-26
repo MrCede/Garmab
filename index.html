@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/insaniburger-with-cheese" rel="stylesheet">
+    <link rel="icon" href="./images/GARMAB 2.jpg">
 </head>
 <style>
     *{
@@ -30,14 +31,14 @@
 <body>
     <header class="bg-[#208aad] flex lg:h-[100px] lg:items-center lg:justify-between">
         <a href="index.html">
-            <img class="lg:w-[270px] lg:pl-16" src="./images/GARMAB 2.jpg" alt="logo">
+            <img class="lg:w-[270px] lg:pl-16" src="./images/GARMAB 2 y 3 sin fondo.png" alt="logo">
         </a>
         <ul class="flex items-center gap-2 text-white lg:gap-16 lg:text-[1.4rem] lg:pr-32">
+            <a href="index.html"><li class="hover:font-bold transition-all">Home</li></a>
             <a href="services.html"><li class="hover:font-bold transition-all">Services</li></a>
-            <a href=""><li class="hover:font-bold transition-all">Gallery</li></a>            
-            <a href=""><li class="hover:font-bold transition-all">FAQS</li></a>         
-            <a href=""><li class="hover:font-bold transition-all">Contact</li></a>            
-            <a href=""><li class="hover:font-bold transition-all">About us</li></a>
+            <a href="gallery.html"><li class="hover:font-bold transition-all">Gallery</li></a>            
+            <a href="faqs.html"><li class="hover:font-bold transition-all">FAQS</li></a>                    
+            <a href="about_us.html"><li class="hover:font-bold transition-all">About us</li></a>
         </ul>
     </header>
 
@@ -56,10 +57,10 @@
 
     <section class="oferta h-[200px] flex justify-around items-center gap-6 mx-8">
         <div class="ofert-container">            
-            <h3 class="text-lg">For a limited time only!</h1>
-            <h3 class="text-lg">Enjoy a 10% discount on your initial clean</h2>
+            <h3 class="text-lg lg:text-4xl">For a limited time only!</h1>
+            <h3 class="text-lg lg:text-4xl">Enjoy a 10% discount on your initial clean</h2>
         </div>
-        <button class="boton w-[250px] h-[100px] bg-[#141959] text-white rounded-3xl pointer">Book your appointment today!</button>
+        <a href=""><button class="boton w-[140px] h-[100px] bg-[#141959] text-white rounded-3xl pointer lg:w-[300px] lg:h-[120px] lg:text-[1.6rem] hover:bg-white hover:text-[#141959] hover:font-bold hover:border-4 hover:border-[#141959] transition-all">Book your appointment today!</button></a>
     </section>
 
     <section class="lg:mt-16">
@@ -83,15 +84,48 @@
         </div>
     </section>
 
+    <section> 
+        <h1 class="text-center text-[2rem] lg:text-[3.5rem] mt-16">CUSTOMER REVIEWS</h1>
+        <div class="lg:flex mt-8">
+            <div class="w-[400px] h-[280px] bg-gray-200 rounded-3xl m-auto mt-8">
+                <div class="flex items-center">
+                    <img class="rounded-[100%] p-2" src="./images/cliente.png" alt="perfil" width="64px">
+                    <h3 class="text-[1.3rem]">Paul Abraham</h3>
+                </div>
+                <div>
+                    <p class="px-6 py-2 text-[1.2rem]">"I was blown away by the level of detail and care that Garmab put into cleaning my home. Every nook and cranny was spotless. They truly went above and beyond to make my house shine. Highly recommend!"</p>
+                </div>
+            </div>
+            <div class="w-[400px] h-[280px] bg-gray-200 rounded-3xl m-auto mt-16 lg:mt-8">
+                <div class="flex items-center">
+                    <img class="rounded-[100%] p-2" src="./images/cliente.png" alt="perfil" width="64px">
+                    <h3 class="text-[1.3rem]">Olivia Harper</h3>
+                </div>
+                <div>
+                    <p class="px-6 py-2 text-[1.2rem]">"Garmab was right on time and finished the job quickly and efficiently. My house was sparkling clean when they were done. I'll definitely be using their services again."</p>
+                </div>
+            </div>
+            <div class="w-[400px] h-[280px] bg-gray-200 rounded-3xl m-auto mt-16 lg:mt-8">    
+                <div class="flex items-center">
+                    <img class="rounded-[100%] p-2" src="./images/cliente.png" alt="perfil" width="64px">
+                    <h3 class="text-[1.3rem]">Ana Sanchez</h3>
+                </div>
+                <div>
+                    <p class="px-6 py-2 text-[1.2rem]">"I appreciated how Garmab took the time to listen to my specific cleaning needs and tailored their services accordingly. My home looks amazing and I'm so happy with the results. Thank you!"</p>
+                </div>
+            </div>    
+        </div>
+    </section>
+
     <footer class="bg-[#208aad] mt-16">
-        <div class="w-full flex items-center gap-8 lg:justify-center lg:pr-48">
+        <div class="w-full flex items-center gap-8 lg:justify-center">
             <div class="ml-6">
                 <img src="./images/GARMAB 2.jpg" alt="logo" width="200px" height="180px">
             </div>
-            <div class=" w-[40px] h-[40px] flex gap-4">
-                <img class="hover:-translate-y-3 transition-transform duration-[500ms] cursor-pointer" src="./images/whatsapp.png" alt="whatsapp">
-                <img class="hover:-translate-y-3 transition-transform duration-[500ms] cursor-pointer" src="./images/instagram.png" alt="instagram">
-                <img class="hover:-translate-y-3 transition-transform duration-[500ms] cursor-pointer" src="./images/facebook.png" alt="facebook">
+            <div class=" w-[200px] h-[200px] flex items-center gap-4">
+                <a href="https://wa.me/+18327013771" target="_blank"><img class="hover:-translate-y-3 transition-transform duration-[500ms] cursor-pointer lg:w-[45px]" src="./images/whatsapp.png" alt="whatsapp"></a>               
+                <a href="https://www.instagram.com/garmab.cleaning?igsh=MXUzejJ5cnowdHhzNw==" target="_blank"><img class="hover:-translate-y-3 transition-transform duration-[500ms] cursor-pointer lg:w-[45px]" src="./images/instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/share/15iNCvBZBT/?mibextid=wwXIfr" target="_blank"><img class="hover:-translate-y-3 transition-transform duration-[500ms] cursor-pointer lg:w-[45px]" src="./images/facebook.png" alt="facebook"></a>           
             </div>
         </div>
         <p class="text-center text-white">&copy2024 All rights reserved. by DCM Deveploment</p>
