@@ -29,32 +29,177 @@
     }
 </style>
 <body>
-    <header class="bg-[#208aad] flex lg:h-[100px] lg:items-center lg:justify-between">
+    <header class="bg-[#208aad] flex justify-between lg:h-[100px] lg:items-center px-8 lg:px-12">
         <a href="index.html">
-            <img class="lg:w-[270px] lg:pl-16" src="./images/GARMAB 2 y 3 sin fondo.png" alt="logo">
+            <img class="w-[140px] lg:w-[270px]" src="./images/GARMAB 2 y 3 sin fondo.png" alt="logo">
         </a>
-        <ul class="flex items-center gap-2 text-white lg:gap-16 lg:text-[1.4rem] lg:pr-32">
-            <a href="index.html"><li class="hover:font-bold transition-all">Home</li></a>
-            <a href="services.html"><li class="hover:font-bold transition-all">Services</li></a>
-            <a href="gallery.html"><li class="hover:font-bold transition-all">Gallery</li></a>            
-            <a href="FAQS.html"><li class="hover:font-bold transition-all">FAQS</li></a>                
-            <a href="about_us.html"><li class="hover:font-bold transition-all">About us</li></a>
-        </ul>
+        <button id="abrir" class="lg:hidden"><img src="./images/menu.png" alt="menu" height="40px" width="40px"></button>
+        <nav id="nav" class="flex flex-col items-end absolute items-end top-0 right-0 bottom-0 bg-[#208aad] z-10 w-[180px] p-[2rem] gap-[2rem] shadow-[0px_0px_0px_100vmax_rgba(0,0,0,.5)] opacity-0 invisible transition-all duration-[400ms] lg:static lg:shadow-none lg:bg-transparent lg:opacity-100 lg:visible lg:w-auto lg:p-0 lg:gap-0">
+            <button id="cerrar" class="lg:hidden"><img src="./images/x.png" alt="cerrar-menu"></button>
+            <ul class="flex flex-col items-center gap-4 text-[1.1rem] text-white lg:gap-16 lg:text-[1.4rem] lg:flex-row">
+                <a href="index.html"><li class="hover:font-bold transition-all">Home</li></a>
+                <a href="services.html"><li class="hover:font-bold transition-all">Services</li></a>
+                <a href="gallery.html"><li class="hover:font-bold transition-all">Gallery</li></a>            
+                <a href="faqs.html"><li class="font-bold">FAQS</li></a>                    
+                <a href="about_us.html"><li class="hover:font-bold transition-all">About us</li></a>
+                <a href="contact.html"><li class="hover:font-bold transition-all">Contact us</li></a>
+            </ul>
+        </nav>
     </header>
 
     <h1 class="text-center text-[1.6rem] mt-8 lg:text-[2.8rem]">Frequently Asked Questions</h1>
 
-    <section class="mt-8">
+    <section class="mt-8 flex flex-col gap-16">
         <div>
             <div class="w-full h-[80px] bg-gray-300 flex items-center gap-8 lg:h-[100px]">
                 <h2 class="text-[2rem] pl-8 lg:text-[3rem]">Q</h1>
-                <p class="text-[1.1rem] lg:text-[1.3rem]">Que servicios ofrece garmab cleaning services</p>
+                <p class="text-[1.1rem] lg:text-[1.3rem]">What services does Garmab Clean Services offer?</p>
             </div>
             <div class="w-full h-[80px] bg-gray-100 flex items-center gap-8 h-[100px]">
                 <h2 class="text-[2rem] pl-8 text-[#141959] lg:text-[3rem]">A</h1>
-                <p class="text-[1.1rem] text-[#141959] lg:text-[1.3rem]">Ofrecemos servicios de limpieza de alta calidad</p>
+                <p class="text-[1.1rem] text-[#141959] lg:text-[1.3rem]">We offer residential, commercial, deep cleaning, post-construction, carpet cleaning, and specialty services based on your needs.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="w-full h-[80px] bg-gray-300 flex items-center gap-8 lg:h-[100px]">
+                <h2 class="text-[2rem] pl-8 lg:text-[3rem]">Q</h1>
+                <p class="text-[1.1rem] lg:text-[1.3rem]">How can I schedule a service?</p>
+            </div>
+            <div class="w-full h-[80px] bg-gray-100 flex items-center gap-8 h-[100px]">
+                <h2 class="text-[2rem] pl-8 text-[#141959] lg:text-[3rem]">A</h1>
+                <p class="text-[1.1rem] text-[#141959] lg:text-[1.3rem]">You can schedule a service by calling us or sending us a message through our social media.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="w-full h-[80px] bg-gray-300 flex items-center gap-8 lg:h-[100px]">
+                <h2 class="text-[2rem] pl-8 lg:text-[3rem]">Q</h1>
+                <p class="text-[1.1rem] lg:text-[1.3rem]">What areas do your services cover?</p>
+            </div>
+            <div class="w-full h-[80px] bg-gray-100 flex items-center gap-8 h-[100px]">
+                <h2 class="text-[2rem] pl-8 text-[#141959] lg:text-[3rem]">A</h1>
+                <p class="text-[1.1rem] text-[#141959] lg:text-[1.3rem]">Contact us to confirm if we are available in your area.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="w-full h-[80px] bg-gray-300 flex items-center gap-8 lg:h-[100px]">
+                <h2 class="text-[2rem] pl-8 lg:text-[3rem]">Q</h1>
+                <p class="text-[1.1rem] lg:text-[1.3rem]">Do you have flexible hours?</p>
+            </div>
+            <div class="w-full h-[80px] bg-gray-100 flex items-center gap-8 h-[100px]">
+                <h2 class="text-[2rem] pl-8 text-[#141959] lg:text-[3rem]">A</h1>
+                <p class="text-[1.1rem] text-[#141959] lg:text-[1.3rem]">Yes, we offer flexible cleaning hours to suit your needs, including weekends and holidays.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="w-full h-[80px] bg-gray-300 flex items-center gap-8 lg:h-[100px]">
+                <h2 class="text-[2rem] pl-8 lg:text-[3rem]">Q</h1>
+                <p class="text-[1.1rem] lg:text-[1.3rem]"> Is it necessary to be home during cleaning?</p>
+            </div>
+            <div class="w-full h-[80px] bg-gray-100 flex items-center gap-8 h-[100px]">
+                <h2 class="text-[2rem] pl-8 text-[#141959] lg:text-[3rem]">A</h1>
+                <p class="text-[1.1rem] text-[#141959] lg:text-[1.3rem]">It is not necessary, but you can be present if you prefer. We only need access to the areas to be cleaned.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="w-full h-[80px] bg-gray-300 flex items-center gap-8 lg:h-[100px]">
+                <h2 class="text-[2rem] pl-8 lg:text-[3rem]">Q</h1>
+                <p class="text-[1.1rem] lg:text-[1.3rem]">How do you calculate the cost of the service?</p>
+            </div>
+            <div class="w-full h-[80px] bg-gray-100 flex items-center gap-8 h-[100px]">
+                <h2 class="text-[2rem] pl-8 text-[#141959] lg:text-[3rem]">A</h1>
+                <p class="text-[1.1rem] text-[#141959] lg:text-[1.3rem]">Prices are based on the size of the space, the type of service required, and the frequency of service. We offer customized quotes.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="w-full h-[80px] bg-gray-300 flex items-center gap-8 lg:h-[100px]">
+                <h2 class="text-[2rem] pl-8 lg:text-[3rem]">Q</h1>
+                <p class="text-[1.1rem] lg:text-[1.3rem]">Do you offer recurring services?</p>
+            </div>
+            <div class="w-full h-[80px] bg-gray-100 flex items-center gap-8 h-[100px]">
+                <h2 class="text-[2rem] pl-8 text-[#141959] lg:text-[3rem]">A</h1>
+                <p class="text-[1.1rem] text-[#141959] lg:text-[1.3rem]">Yes, you can schedule weekly, biweekly, or monthly cleanings with special discounts for recurring services.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="w-full h-[80px] bg-gray-300 flex items-center gap-8 lg:h-[100px]">
+                <h2 class="text-[2rem] pl-8 lg:text-[3rem]">Q</h1>
+                <p class="text-[1.1rem] lg:text-[1.3rem]">8. How can I pay?</p>
+            </div>
+            <div class="w-full h-[80px] bg-gray-100 flex items-center gap-8 h-[100px]">
+                <h2 class="text-[2rem] pl-8 text-[#141959] lg:text-[3rem]">A</h1>
+                <p class="text-[1.1rem] text-[#141959] lg:text-[1.3rem]">We accept cash payments, bank transfers.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="w-full h-[80px] bg-gray-300 flex items-center gap-8 lg:h-[100px]">
+                <h2 class="text-[2rem] pl-8 lg:text-[3rem]">Q</h1>
+                <p class="text-[1.1rem] lg:text-[1.3rem]">What should I do before they arrive?</p>
+            </div>
+            <div class="w-full h-[80px] bg-gray-100 flex items-center gap-8 h-[100px]">
+                <h2 class="text-[2rem] pl-8 text-[#141959] lg:text-[3rem]">A</h1>
+                <p class="text-[1.1rem] text-[#141959] lg:text-[1.3rem]">We recommend that you pick up personal items and make sure pets are in a safe place to make it easier for our team to work.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="w-full h-[80px] bg-gray-300 flex items-center gap-8 lg:h-[100px]">
+                <h2 class="text-[2rem] pl-8 lg:text-[3rem]">Q</h1>
+                <p class="text-[1.1rem] lg:text-[1.3rem]"> Do you offer last-minute services?</p>
+            </div>
+            <div class="w-full h-[80px] bg-gray-100 flex items-center gap-8 h-[100px]">
+                <h2 class="text-[2rem] pl-8 text-[#141959] lg:text-[3rem]">A</h1>
+                <p class="text-[1.1rem] text-[#141959] lg:text-[1.3rem]">Yes, depending on availability. Contact us to verify.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="w-full h-[80px] bg-gray-300 flex items-center gap-8 lg:h-[100px]">
+                <h2 class="text-[2rem] pl-8 lg:text-[3rem]">Q</h1>
+                <p class="text-[1.1rem] lg:text-[1.3rem]">Can I cancel or reschedule my appointment?</p>
+            </div>
+            <div class="w-full h-[80px] bg-gray-100 flex items-center gap-8 h-[100px]">
+                <h2 class="text-[2rem] pl-8 text-[#141959] lg:text-[3rem]">A</h1>
+                <p class="text-[1.1rem] text-[#141959] lg:text-[1.3rem]">Yes, as long as it is at least 24 hours in advance, otherwise there will be additional charges.
+                </p>
             </div>
         </div>
     </section>
+
+    <footer class="bg-[#208aad] mt-16">
+        <div class="w-full flex items-center gap-8 lg:justify-center">
+            <div class="ml-6">
+                <img src="./images/GARMAB 2.jpg" alt="logo" width="200px" height="180px">
+            </div>
+            <div class=" w-[200px] h-[200px] flex items-center gap-4">
+                <a href="https://wa.me/+18327013771" target="_blank"><img class="hover:-translate-y-3 transition-transform duration-[500ms] cursor-pointer lg:w-[45px]" src="./images/whatsapp.png" alt="whatsapp"></a>               
+                <a href="https://www.instagram.com/garmab.cleaning?igsh=MXUzejJ5cnowdHhzNw==" target="_blank"><img class="hover:-translate-y-3 transition-transform duration-[500ms] cursor-pointer lg:w-[45px]" src="./images/instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/share/15iNCvBZBT/?mibextid=wwXIfr" target="_blank"><img class="hover:-translate-y-3 transition-transform duration-[500ms] cursor-pointer lg:w-[45px]" src="./images/facebook.png" alt="facebook"></a>           
+            </div>
+        </div>
+        <p class="text-center text-white">&copy2024 All rights reserved. by DCM Deveploment</p>
+    </footer>
 </body>
+<script>
+    const abrir = document.getElementById("abrir");
+    const cerrar = document.getElementById('cerrar');
+    const nav = document.getElementById('nav');
+    
+    abrir.addEventListener("click", () =>{
+        nav.classList.add("visible", "opacity-100","fixed");
+        nav.classList.remove("invisible","opacity-0","absolute");
+    })
+
+    cerrar.addEventListener("click", () =>{
+        nav.classList.remove("visible", "opacity-100");
+        nav.classList.add("invisible","opacity-0");
+    })
+</script>
 </html>

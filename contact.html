@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>Contact us</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,23 +39,37 @@
             <ul class="flex flex-col items-center gap-4 text-[1.1rem] text-white lg:gap-16 lg:text-[1.4rem] lg:flex-row">
                 <a href="index.html"><li class="hover:font-bold transition-all">Home</li></a>
                 <a href="services.html"><li class="hover:font-bold transition-all">Services</li></a>
-                <a href="gallery.html"><li class="font-bold">Gallery</li></a>            
+                <a href="gallery.html"><li class="hover:font-bold transition-all">Gallery</li></a>            
                 <a href="faqs.html"><li class="hover:font-bold transition-all">FAQS</li></a>                    
                 <a href="about_us.html"><li class="hover:font-bold transition-all">About us</li></a>
-                <a href="contact.html"><li class="hover:font-bold transition-all">Contact us</li></a>
+                <a href="contact.html"><li class="font-bold">Contact us</li></a>
             </ul>
         </nav>
     </header>
 
-    <section class="grid grid-cols-1 gap-16 lg:grid-cols-4 place-items-center mt-16">
-        <img class="rounded-xl" width="300px" height="300px" src="./images/gallery/water before.jpg" alt="inodoro">
-        <img class="rounded-xl" width="300px" height="300px" src="./images/gallery/water after.jpg" alt="inodoro">
-        <img class="rounded-xl" width="300px" height="300px" src="./images/gallery/lavamanos before.jpg" alt="lavamanos">
-        <img class="rounded-xl" width="300px" height="300px" src="./images/gallery/lavamnos after.jpg" alt="lavamanos">
-        <img class="rounded-xl" width="300px" height="300px" src="./images/gallery/cuarto before.jpg" alt="cuarto">
-        <img class="rounded-xl" width="300px" height="300px" src="./images/gallery/cuarto after.jpg" alt="cuarto">
-        <img class="rounded-xl" width="300px" height="300px" src="./images/gallery/closet before.jpg" alt="closet">
-        <img class="rounded-xl" width="300px" height="300px" src="./images/gallery/closet despues.jpg" alt="closet">        
+    <section class="flex">
+        <div class="w-[90%] h-[700px] bg-[#141959] m-auto mt-10 text-white flex flex-col gap-16 shadow-[9px_10px_18px_3px_rgba(0,0,0,0.75)] lg:w-[40%] lg:ml-8 lg:h-[40em] lg:shadow-none">
+            <h1 class="px-8 pt-8 text-[2rem] lg:pl-12">Contact Us</h2>
+            <div class="flex items-center gap-4 px-6 lg:pl-12">
+                <img src="./images/mail.png" alt="icono de email">
+                <p class="text-[1.2rem]">Cleaningservicesgarmab@gmail.com</p>
+            </div>
+            <div class="flex items-center gap-4 px-6 lg:pl-12">
+                <img src="./images/llamar.png" alt="icono de telefono">
+                <p class="text-[1.4rem]">+1 (832) 701-3771</p>
+            </div>
+            <div class="flex items-center gap-4 px-6 lg:pl-12">
+                <img src="./images/instagram contacto.png" alt="icono de instagram">
+                <p class="text-[1.4rem]">Garmab.cleaning</p>
+            </div>
+            <div class="flex items-center gap-4 px-6 lg:pl-12">
+                <img src="./images/facebook contacto.png" alt="icono de facebook">
+                <p class="text-[1.4rem]">GarMab Cleaning</p>
+            </div>
+        </div>
+        <div class="pt-10 mr-6 hidden lg:block">
+            <img class="h-[40em]" src="./images/contacto.jpg" alt="indoor">
+        </div>
     </section>
 
     <footer class="bg-[#208aad] mt-16">

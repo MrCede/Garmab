@@ -29,21 +29,26 @@
     }
 </style>
 <body>
-    <header class="bg-[#208aad] flex lg:h-[100px] lg:items-center lg:justify-between">
+    <header class="bg-[#208aad] flex justify-between lg:h-[100px] lg:items-center px-8 lg:px-12">
         <a href="index.html">
-            <img class="lg:w-[270px] lg:pl-16" src="./images/GARMAB 2 y 3 sin fondo.png" alt="logo">
+            <img class="w-[140px] lg:w-[270px]" src="./images/GARMAB 2 y 3 sin fondo.png" alt="logo">
         </a>
-        <ul class="flex items-center gap-2 text-white lg:gap-16 lg:text-[1.4rem] lg:pr-32">
-            <a href="index.html"><li class="hover:font-bold transition-all">Home</li></a>
-            <a href="services.html"><li class="hover:font-bold transition-all">Services</li></a>
-            <a href="gallery.html"><li class="hover:font-bold transition-all">Gallery</li></a>            
-            <a href="faqs.html"><li class="hover:font-bold transition-all">FAQS</li></a>                    
-            <a href="about_us.html"><li class="hover:font-bold transition-all">About us</li></a>
-        </ul>
+        <button id="abrir" class="lg:hidden"><img src="./images/menu.png" alt="menu" height="40px" width="40px"></button>
+        <nav id="nav" class="flex flex-col items-end absolute items-end top-0 right-0 bottom-0 bg-[#208aad] z-10 w-[180px] p-[2rem] gap-[2rem] shadow-[0px_0px_0px_100vmax_rgba(0,0,0,.5)] opacity-0 invisible transition-all duration-[400ms] lg:static lg:shadow-none lg:bg-transparent lg:opacity-100 lg:visible lg:w-auto lg:p-0 lg:gap-0">
+            <button id="cerrar" class="lg:hidden"><img src="./images/x.png" alt="cerrar-menu"></button>
+            <ul class="flex flex-col items-center gap-4 text-[1.1rem] text-white lg:gap-16 lg:text-[1.4rem] lg:flex-row">
+                <a href="index.html"><li class="font-bold">Home</li></a>
+                <a href="services.html"><li class="hover:font-bold transition-all">Services</li></a>
+                <a href="gallery.html"><li class="hover:font-bold transition-all">Gallery</li></a>            
+                <a href="faqs.html"><li class="hover:font-bold transition-all">FAQS</li></a>                    
+                <a href="about_us.html"><li class="hover:font-bold transition-all">About us</li></a>
+                <a href="contact.html"><li class="hover:font-bold transition-all">Contact us</li></a>
+            </ul>
+        </nav>
     </header>
 
     <section class="seccion video w-full">
-        <video autoplay loop class="relative lg:hidden">
+        <video autoplay loop class="relative z-0 lg:hidden">
             <source src="./images/Home garmab vertical.mp4 " type="video/mp4">
         </video>
         <video autoplay loop class="relative hidden lg:block w-full">
@@ -60,7 +65,7 @@
             <h3 class="text-lg lg:text-4xl">For a limited time only!</h1>
             <h3 class="text-lg lg:text-4xl">Enjoy a 10% discount on your initial clean</h2>
         </div>
-        <a href="https://wa.me/+18327013771"><button class="boton w-[140px] h-[100px] bg-[#141959] text-white rounded-3xl pointer lg:w-[300px] lg:h-[120px] lg:text-[1.6rem] hover:bg-white hover:text-[#141959] hover:font-bold hover:border-4 hover:border-[#141959] transition-all">Book your appointment today!</button></a>
+        <a href="https://wa.me/+18327013771" target="_blank"><button class="boton w-[140px] h-[100px] bg-[#141959] text-white rounded-3xl pointer lg:w-[300px] lg:h-[120px] lg:text-[1.6rem] hover:bg-white hover:text-[#141959] hover:font-bold hover:border-4 hover:border-[#141959] transition-all">Book your appointment today!</button></a>
     </section>
 
     <section class="lg:mt-16">
@@ -131,4 +136,19 @@
         <p class="text-center text-white">&copy2024 All rights reserved. by DCM Deveploment</p>
     </footer>
 </body>
+<script>
+    const abrir = document.getElementById("abrir");
+    const cerrar = document.getElementById('cerrar');
+    const nav = document.getElementById('nav');
+    
+    abrir.addEventListener("click", () =>{
+        nav.classList.add("visible", "opacity-100","fixed");
+        nav.classList.remove("invisible","opacity-0","absolute");
+    })
+
+    cerrar.addEventListener("click", () =>{
+        nav.classList.remove("visible", "opacity-100");
+        nav.classList.add("invisible","opacity-0");
+    })
+</script>
 </html>

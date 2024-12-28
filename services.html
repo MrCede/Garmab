@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/insaniburger-with-cheese" rel="stylesheet">
     <link rel="icon" href="./images/GARMAB 2.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <style>
     *{
@@ -29,19 +30,134 @@
     }
 </style>
 <body>
-    <header class="bg-[#208aad] flex lg:h-[100px] lg:items-center lg:justify-between">
+    <header class="bg-[#208aad] flex justify-between lg:h-[100px] lg:items-center px-8 lg:px-12">
         <a href="index.html">
-            <img class="lg:w-[270px] lg:pl-16" src="./images/GARMAB 2 y 3 sin fondo.png" alt="logo">
+            <img class="w-[140px] lg:w-[270px]" src="./images/GARMAB 2 y 3 sin fondo.png" alt="logo">
         </a>
-        <ul class="flex items-center gap-2 text-white lg:gap-16 lg:text-[1.4rem] lg:pr-32">
-            <a href="index.html"><li class="hover:font-bold transition-all">Home</li></a>
-            <a href="services.html"><li class="hover:font-bold transition-all">Services</li></a>
-            <a href="gallery.html"><li class="hover:font-bold transition-all">Gallery</li></a>            
-            <a href="faqs.html"><li class="hover:font-bold transition-all">FAQS</li></a>               
-            <a href="about_us.html"><li class="hover:font-bold transition-all">About us</li></a>
-        </ul>
+        <button id="abrir" class="lg:hidden"><img src="./images/menu.png" alt="menu" height="40px" width="40px"></button>
+        <nav id="nav" class="flex flex-col items-end absolute items-end top-0 right-0 bottom-0 bg-[#208aad] z-10 w-[180px] p-[2rem] gap-[2rem] shadow-[0px_0px_0px_100vmax_rgba(0,0,0,.5)] opacity-0 invisible transition-all duration-[400ms] lg:static lg:shadow-none lg:bg-transparent lg:opacity-100 lg:visible lg:w-auto lg:p-0 lg:gap-0">
+            <button id="cerrar" class="lg:hidden"><img src="./images/x.png" alt="cerrar-menu"></button>
+            <ul class="flex flex-col items-center gap-4 text-[1.1rem] text-white lg:gap-16 lg:text-[1.4rem] lg:flex-row">
+                <a href="index.html"><li class="hover:font-bold transition-all">Home</li></a>
+                <a href="services.html"><li class="font-bold">Services</li></a>
+                <a href="gallery.html"><li class="hover:font-bold transition-all">Gallery</li></a>            
+                <a href="faqs.html"><li class="hover:font-bold transition-all">FAQS</li></a>                    
+                <a href="about_us.html"><li class="hover:font-bold transition-all">About us</li></a>
+                <a href="contact.html"><li class="hover:font-bold transition-all">Contact us</li></a>
+            </ul>
+        </nav>
     </header>
 
+    <div class="swiper">
+        <div class="swiper-wrapper">
+        <div class="select-none h-[38em] m-auto mt-12 bg-gray-200 rounded-3xl swiper-slide lg:h-[35em]">
+            <div class="p-8">
+                <h2 class="text-center text-[1.5rem] font-bold">Kitchen & Dining Area Cleaning Services</h2>
+                <p class="mt-6 text-[1.3rem] px-2">•⁠ Countertop Cleaning and Polishing
+                    <br>
+                    •⁠ Cabinet and Drawer Cleaning and Polishing
+                    <br>
+                    •⁠ Sink and Faucet Cleaning
+                    <br>
+                    •⁠ Stove Cleaning (top, front, and interior)
+                    <br>
+                    •⁠ Oven Exterior Cleaning
+                    <br>
+                    •⁠ Microwave Interior and Exterior Cleaning
+                    <br>
+                    •⁠ Refrigerator Exterior Cleaning
+                    <br>
+                    •⁠ ⁠Dishwasher Exterior Cleaning
+                    <br>
+                    •⁠ Floor Care (vacuuming and mopping)</p>
+            </div>
+        </div>
+        <div class="select-none h-[38em] m-auto mt-12 bg-gray-200 rounded-3xl swiper-slide lg:h-[35em]">
+            <div class="p-8">
+                <h2 class="text-center text-[1.5rem] font-bold">Bathroom Cleaning Services</h2>
+                <p class="mt-6 text-[1.3rem] px-2">•  Toilet Cleaning: Cleaning of the toilet bowl, seat, and base.
+                    <br>
+                    •  Shower and Bathtub Cleaning: Cleaning of the showerhead, walls, and floor.
+                    <br>
+                    •  Sink and Faucet Cleaning: Cleaning of the sink and faucet.
+                    <br>
+                    •  Mirror Cleaning: Cleaning of mirrors and mirrored cabinets.
+                    <br>
+                    •  Light Fixture Cleaning: Cleaning of light fixtures and ceiling fans.
+                    <br>
+                    •  Countertop and Cabinet Cleaning: Cleaning of countertops, cabinets, and drawers
+            </div>
+        </div>
+        <div class="select-none h-[38em] m-auto mt-12 bg-gray-200 rounded-3xl swiper-slide lg:h-[35em]">
+            <div class="p-8">
+                <h2 class="text-center text-[1.5rem] font-bold">Housekeeping Services:</h2>
+                <p class="mt-6 text-[1.3rem] px-2">•⁠ Dusting of surfaces
+                    <br>
+                    •⁠ Floor care (sweeping, vacuuming, and mopping)
+                    <br>
+                    •⁠ Blind or curtain dusting
+                    <br>
+                    •⁠ Baseboard cleaning
+                    <br>
+                    •⁠ Bed making
+            </div>
+        </div>
+        <div class="select-none h-[38em] m-auto mt-12 bg-gray-200 rounded-3xl swiper-slide lg:h-[35em]">
+            <div class="p-8">
+                <h2 class="text-center text-[1.5rem] font-bold">Living Room Cleaning Services:</h2>
+                <p class="mt-6 text-[1.3rem] px-2">•⁠  Surface and furniture dusting and polishing
+                    <br>
+                    •⁠  Window cleaning
+                    <br>
+                    •⁠  ⁠Carpet and rug vacuuming and cleaning
+                    <br>
+                    •⁠  ⁠Lamp and decoration dusting and cleaning
+            </div>
+        </div>
+        <div class="select-none h-[38em] m-auto mt-12 bg-gray-200 rounded-3xl swiper-slide lg:h-[35em]">
+            <div class="p-8">
+                <h2 class="text-center text-[1.5rem] font-bold">Closet Optimization:</h2>
+                <p class="mt-6 text-[1.3rem] px-2">• Creating a functional and peaceful closet space
+                    <br>
+                    • ⁠Personalized Organization: Organizing your belongings by color, style, and category
+                    <br>
+                    • Eco-Friendly Organization: Recycling and donating items to reduce waste and support sustainability.
+            </div>
+        </div>
+        <div class="select-none h-[38em] m-auto mt-12 bg-gray-200 rounded-3xl swiper-slide lg:h-[35em]">
+            <div class="p-8">
+                <h2 class="text-center text-[1.5rem] font-bold">Kitchen Organization:</h2>
+                <p class="mt-6 text-[1.3rem] px-2">• Transforming your pantry and kitchen into a streamlined and efficient space.
+                    <br>
+                    • ⁠Utensil Organization: Organizing your kitchen tools and gadgets for maximum productivity
+                    <br>
+                    • Product Decluttering: Removing expired and damaged products to ensure a safe and healthy kitchen environment
+            </div>
+        </div>
+        <div class="select-none h-[38em] m-auto mt-12 bg-gray-200 rounded-3xl swiper-slide lg:h-[35em]">
+            <div class="p-8">
+                <h2 class="text-center text-[1.5rem] font-bold">Specialty Cleaning Services:</h2>
+                <p class="mt-6 text-[1.3rem] px-2">•⁠ ⁠Sparkling Windows: Crystal-clear window cleaning for a brighter view.
+                    <br>
+                    •⁠ Deep Carpet Cleaning.
+                    <br>
+                    •⁠ ⁠Refrigerator and Freezer Cleaning: Thoroughly clean the interior of your appliances to prevent bacterial growth and odors.
+                    <br>
+                    •⁠ Oven Cleaning: Remove tough grime and food residue from your oven for a like-new shine
+                    <br>
+                    •⁠ Cabinet Cleaning: Dust and dirt don't stand a chance with our precision cleaning of cabinet sides and tops.
+                    <br>
+            </div>
+        </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="w-full flex justify-center items-center mt-6">
+        <a href="https://wa.me/+18327013771" target="_blank"><button class="w-[150px] h-[60px] bg-[#141959] text-white rounded-3xl pointer lg:w-[300px] lg:text-[1.6rem] hover:bg-white hover:text-[#141959] hover:font-bold hover:border-4 hover:border-[#141959] transition-all">Learn more</button></a>
+    </div>
 
     <footer class="bg-[#208aad] mt-16">
         <div class="w-full flex items-center gap-8 lg:justify-center">
@@ -56,5 +172,50 @@
         </div>
         <p class="text-center text-white">&copy2024 All rights reserved. by DCM Deveploment</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
+<script>
+    const abrir = document.getElementById("abrir");
+    const cerrar = document.getElementById('cerrar');
+    const nav = document.getElementById('nav');
+    
+    abrir.addEventListener("click", () =>{
+        nav.classList.add("visible", "opacity-100","fixed");
+        nav.classList.remove("invisible","opacity-0","absolute");
+    });
+
+    cerrar.addEventListener("click", () =>{
+        nav.classList.remove("visible", "opacity-100");
+        nav.classList.add("invisible","opacity-0");
+    });
+
+    new Swiper('.swiper', {
+    loop: true,
+    spaceBetween: 30, // Habilita el bucle
+
+pagination: {
+    el: '.swiper-pagination',
+    clickable: true, // Hace que los indicadores sean clicables
+},
+
+navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+},
+
+breakpoints:{
+    0:{
+        slidesPerView:1
+    },
+    768:{
+        slidesPerView:2
+    },
+    1024:{
+        slidesPerView:3
+    }
+}
+});
+
+</script>
 </html>
